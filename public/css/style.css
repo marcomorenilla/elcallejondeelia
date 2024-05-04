@@ -1,3 +1,8 @@
+/*Ajustes generales*/
+*{
+    padding: 0;
+    margin: 0;
+}
 div{
     border-color: red;
     border-style: solid;
@@ -6,3 +11,51 @@ div{
     padding-bottom: 5%;
     border-style: none;
 }
+
+/*Ajustes de encabezado*/
+#encabezado{
+    margin-top: 2%;
+    padding-bottom: 2%;
+    
+}
+h1{
+    padding-top:1%;
+    text-align: left;
+    padding-bottom: 4%;
+    border-style: solid;
+    border-color: blue;
+    background-color: blue;
+}
+.menu{
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline;
+    padding-left: 3%;
+}
+.menu a{
+    text-decoration: none;
+}
+.logo{
+    margin-top:2%;
+    margin-left: 1%;
+    padding-bottom: 6%;
+    border-style: solid;
+    border-color: yellow;
+    background-color: yellow;
+}
+
+/*Tabla que comprende el h1 y el buscador*/
+.buscador{
+    
+    border-style: none;
+    border-spacing: none;
+    margin-top:2%;
+    margin-right: 37%;
+    padding-bottom: 1%;
+    width: 50%;
+    float:right;
+    background-color: blueviolet;
+}
+
