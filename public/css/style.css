@@ -3,39 +3,52 @@
     padding: 0;
     margin: 0;
 }
+::-webkit-scrollbar{
+    display: none;
+}
+h2{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 div{
     border-color: red;
     border-style: solid;
+    overflow-x: scroll;
 }
 .separador{
     padding-bottom: 5%;
     border-style: none;
 }
+/*Menú cabecera*/
+nav{
+    list-style-type: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: black;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    color: white;
+    border-style: solid;
+    border-color: white;
+    text-decoration: none;
+}
 
 /*Ajustes de encabezado*/
 #encabezado{
-    margin-top: 2%;
-    padding-bottom: 2%;
-    
+    margin-top: 1%;
+    padding-bottom: 2%;   
 }
 h1{
     padding-top:1%;
-    text-align: left;
+    text-align: center;
     padding-bottom: 4%;
     border-style: solid;
     border-color: blue;
     background-color: blue;
-}
-.menu{
-    list-style-type: none;
-}
-
-.menu li{
-    display: inline;
-    padding-left: 3%;
-}
-.menu a{
-    text-decoration: none;
 }
 .logo{
     margin-top:2%;
@@ -45,10 +58,8 @@ h1{
     border-color: yellow;
     background-color: yellow;
 }
-
 /*Tabla que comprende el h1 y el buscador*/
-.buscador{
-    
+.buscador{  
     border-style: none;
     border-spacing: none;
     margin-top:2%;
@@ -59,3 +70,22 @@ h1{
     background-color: blueviolet;
 }
 
+/*Libros más vendidos*/
+#topseller{
+    padding-bottom: 1%;
+    background-color: blue;
+}
+.scroll-img{
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+}
+.scroll-img img{
+    flex:0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    background-color: greenyellow;
+}
