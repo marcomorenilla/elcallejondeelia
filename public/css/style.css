@@ -1,4 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    display: grid;
+}
+div{
+    border:solid;
+    border-color: red;
+}
+h1{
+    border:solid;
+    border-color:blue;
+}
+h2{
+    border: solid;
+    border-color: green;
 }
