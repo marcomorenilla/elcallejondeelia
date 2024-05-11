@@ -1,3 +1,52 @@
 .img{
     height: 100px;
 }
+.img-mapa{
+    height: 300px;
+}
+@font-face {
+    font-family:'lettering' ;
+    src: url(../resources/font/Hello.ttf);
+}
+@font-face {
+    font-family: 'cafe-bold';
+    src: url(../resources/font/Louis\ George\ Cafe\ Bold.ttf);
+}
+@font-face{
+    font-family: 'mom';
+    src: url(../resources/font/Mom.ttf);
+}
+@font-face{
+    font-family: 'traveling';
+    src: url(../resources/font/TravelingTypewriter.ttf);
+}
+@font-face{
+    font-family: 'punk';
+    src: url(../resources/font/Punk\ Typewriter.otf);
+}
+h1{
+    font-family: "punk";
+    font-size: 10vh;
+    font-weight: lighter;
+}
+h2{
+    font-family: 'cafe-bold';
+}
+p{
+    font-family: 'cafe-bold';
+}
+
+/*Efecto parallax*/
+body { 
+    background-image: url(../resources/img/cafe-background.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto; 
+}
+
+div{
+    background-color: white;
+    border-radius: 2px;
+}
