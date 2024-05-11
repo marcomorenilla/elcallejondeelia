@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .img{
     height: 100px;
 }
@@ -24,9 +28,9 @@
     font-family: 'punk';
     src: url(../resources/font/Punk\ Typewriter.otf);
 }
-h1{
+.box-title h1{
     font-family: "punk";
-    font-size: 10vh;
+    font-size: 300%;
     font-weight: lighter;
 }
 h2{
@@ -47,7 +51,19 @@ body {
 }
 
 div{
-    background-color: white;
+    background-color: #f9f3f4;
     border-style: ridge;
-    border-radius: 2%;
+    border-radius: 9px;
+}
+
+#home .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+
+.box-title{
+    width: 75%;
+}
+.box-logo{
+    width: 30%;
 }
