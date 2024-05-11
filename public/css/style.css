@@ -8,22 +8,12 @@
 .img-mapa{
     height: 300px;
 }
-@font-face {
-    font-family:'lettering' ;
-    src: url(../resources/font/Hello.ttf);
-}
+
 @font-face {
     font-family: 'cafe-bold';
     src: url(../resources/font/Louis\ George\ Cafe\ Bold.ttf);
 }
-@font-face{
-    font-family: 'mom';
-    src: url(../resources/font/Mom.ttf);
-}
-@font-face{
-    font-family: 'traveling';
-    src: url(../resources/font/TravelingTypewriter.ttf);
-}
+
 @font-face{
     font-family: 'punk';
     src: url(../resources/font/Punk\ Typewriter.otf);
@@ -33,7 +23,7 @@
     font-size: 300%;
     font-weight: lighter;
 }
-h2{
+h2,h3{
     font-family: 'cafe-bold';
 }
 p{
@@ -50,20 +40,95 @@ body {
     background-size:auto; 
 }
 
-div{
-    background-color: #f9f3f4;
-    border-style: ridge;
-    border-radius: 9px;
+#home{
+    background-color: #f3f4f9;
+    border-radius: 6px;
 }
 
+.navigation-bar{
+    background-color: #000;
+    text-align: center;
+    padding: 1%;
+}
+.navigation-bar ul{
+    list-style-type: none;
+}
+.navigation-bar li{
+    display: inline;
+    padding: 1%;
+}
+.navigation-bar li:hover{
+    background-color: #178695;
+}
+.navigation-bar a{
+    text-decoration: none;
+    font-family: 'cafe-bold';
+    color: #f3f4f9;
+}
 #home .container{
+    padding-bottom: 4%;
+    text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: 1fr 7fr;
+}
+.box-logo{
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+
+.box-logo img{
+    background-size: contain;
+    height: 20vh;
+    border-radius: 6px;
 }
 
 .box-title{
-    width: 75%;
+    text-align: left;
+    padding-left: 5%;
 }
-.box-logo{
-    width: 30%;
+
+/*Libros más vendidos*/
+#topseller{
+    margin-top: 20%;
+    background-color: #f3f4f9;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#topseller h2{
+    background-color: #000;
+    color: white;
+    padding: 2%;
+}
+
+#topseller .container{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 2%;
+    width: 96%;
+    margin-left: 2%;
+}
+
+/* Eventos*/
+#eventos{
+    margin-top: 20%;
+    background-color: #f3f4f9;
+    text-align: center;
+    border-radius: 6px;
+}
+#eventos h2{
+    background-color: #000;
+    color: white;
+    padding: 2%;
+}
+
+#eventos .container{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2%;
+    width: 96%;
+    margin-left: 2%;
 }
