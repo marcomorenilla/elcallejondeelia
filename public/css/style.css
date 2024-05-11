@@ -48,5 +48,6 @@ body {
 
 div{
     background-color: white;
-    border-radius: 2px;
+    border-style: ridge;
+    border-radius: 2%;
 }
