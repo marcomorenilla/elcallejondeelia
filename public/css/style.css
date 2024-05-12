@@ -23,9 +23,6 @@
     font-size: 300%;
     font-weight: lighter;
 }
-h2,h3{
-    font-family: 'cafe-bold';
-}
 p{
     font-family: 'cafe-bold';
 }
@@ -39,23 +36,35 @@ body {
     background-repeat: no-repeat;
     background-size:auto; 
 }
-
-#home{
+ /*Abstracciones generales que estaba repitiendo*/
+section{
+    margin-top: 20%;
     background-color: #f3f4f9;
+    text-align: center;
     border-radius: 6px;
 }
 
+h2{
+    background-color: #000;
+    color: white;
+    padding: 2%;
+    font-family: 'cafe-bold';
+}
+
 .navigation-bar{
+    position: fixed;  
+    width: 100%;
     background-color: #000;
     text-align: center;
-    padding: 1%;
+    padding: 2%;
 }
 .navigation-bar ul{
     list-style-type: none;
 }
 .navigation-bar li{
     display: inline;
-    padding: 1%;
+    padding:2%
+
 }
 .navigation-bar li:hover{
     background-color: #178695;
@@ -67,15 +76,17 @@ body {
     font-size: 120%;
 }
 #home .container{
-    padding-bottom: 4%;
+    padding-top: 12%;
+    background-color: #f3f4f9;
+    border-radius: 6px;
+    padding-bottom: 6%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 7fr;
 }
 .box-logo{
     text-align: left;
-    padding-left: 4%;
-    padding-top: 3%;
+    padding-left: 6%;
 }
 
 .box-logo img{
@@ -90,19 +101,6 @@ body {
 }
 
 /*Libros más vendidos*/
-#topseller{
-    margin-top: 20%;
-    background-color: #f3f4f9;
-    text-align: center;
-    border-radius: 6px;
-}
-
-#topseller h2{
-    background-color: #000;
-    color: white;
-    padding: 2%;
-}
-
 #topseller .container{
     padding-top: 5%;
     display: grid;
@@ -119,11 +117,6 @@ body {
     text-align: center;
     border-radius: 6px;
 }
-#eventos h2{
-    background-color: #000;
-    color: white;
-    padding: 2%;
-}
 
 #eventos .container{
     padding-top: 5%;
@@ -132,4 +125,79 @@ body {
     column-gap: 2%;
     width: 96%;
     margin-left: 2%;
+}
+
+.box-evento  table{
+    border-spacing: 0;
+    text-align: center;
+    margin-bottom: 7%;
+    width: 100%;
+    border-color: #178695;
+    border-radius: 3px;
+}
+.box-evento table th{
+    background-color: #000;
+    color: #f3f4f9;
+    font-family: 'cafe-bold';
+    padding: 2%;
+}
+
+.box-evento table td{
+    padding: 2%;
+    font-family: 'cafe-bold';
+}
+
+.topleft{
+    width: 20%;
+    border-top-left-radius: 3px;
+}
+
+.topright{
+    border-top-right-radius: 3px;
+}
+
+.bottomleft{
+    border-bottom-left-radius: 3px;
+}
+
+.bottomright{
+    border-bottom-right-radius: 3px;
+}
+
+/*Géneros*/
+#generos .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+#generos a{
+    text-decoration: none;
+    font-family: 'cafe-bold';
+}
+.box-novela{
+    background-color: #DDF0FF;
+}
+.box a{
+    color:#000;
+    font-size: 150%;
+}
+.box{
+    padding-bottom: 30%;
+    padding-top: 30%;
+}
+.box:hover{
+    background-color: #f3f4f9;
+}
+.box-fantasia{
+    background-color: #c4dafa;
+}
+.box-ciencia-ficcion{
+    background-color: #84b6f4;
+}
+.box-historica{
+    background-color: #4d82bc;
+}
+.box-informatica{
+    background-color: #005187;
 }
