@@ -74,14 +74,19 @@ h2{
     color: #f3f4f9;
     font-size: 120%;
 }
+@media only screen and (max-width: 600px) {
+    .navigation-bar a{
+      font-size: 75%;
+    }
+  }
 #home .container{
-    padding-top: 14%;
+    padding-top: 10%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .box-logo{
     text-align: center;
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .box-logo img{
@@ -91,13 +96,41 @@ h2{
 }
 
 .box-title{
+    padding-left: 2%;
     text-align: left;
 }
 
 .box-title p{
-    margin-top: 5%;
+    margin-top: 3%;
     text-align: justify;
     width: 40%;
+}
+
+.box-title label{
+    font-family: 'cafe-bold';
+}
+
+.box-title input{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+    width: 80%;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #005187;
+}
+
+.box-title button{
+    border-radius: 3px;
+    font-family: 'cafe-bold';
+    width: 15%;
+    padding: 1%;
+    color: #f3f4f9;
+    background-color: #84b6f4;
+}
+.box-title button:hover{
+    background-color: #005187;
+    text-decoration: underline;
 }
 
 /*Libros más vendidos*/
