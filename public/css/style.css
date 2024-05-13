@@ -14,7 +14,7 @@
 }
 .box-title h1{
     font-family: "punk";
-    font-size: 300%;
+    font-size: 500%;
     font-weight: lighter;
 }
 p{
@@ -40,8 +40,8 @@ section{
     background-color: #f3f4f9;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-    padding-bottom: 15%;
     text-align: center;
+    padding-bottom: 2%;
 }
 
 h2{
@@ -51,6 +51,7 @@ h2{
     font-family: 'cafe-bold';
 }
 
+/*Barra navegación*/
 .navigation-bar{
     position: fixed;  
     width: 100%;
@@ -79,35 +80,39 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .box-logo{
-    text-align: left;
-    padding-left: 6%;
+    text-align: center;
+    margin-left: 30%;
 }
 
 .box-logo img{
-    background-size: contain;
-    height: 20vh;
+    width: 60%;
+    object-fit: cover;
     border-radius: 6px;
 }
 
 .box-title{
     text-align: left;
-    padding-left: 5%;
+}
+
+.box-title p{
+    margin-top: 5%;
+    text-align: justify;
+    width: 40%;
 }
 
 /*Libros más vendidos*/
 #topseller .container{
     display: grid;
-   /* grid-template-columns: repeat(5,1fr);*/
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     column-gap: 2%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 30%;
 }
 .box-libros img{
-    width: 100%;
+    width: 50%;
     height: 50%;
     object-fit: cover;
+    border-radius: 6px;
 }
 
 .box-libros p{
