@@ -12,10 +12,20 @@
     font-family: 'punk';
     src: url(../resources/font/Punk\ Typewriter.otf);
 }
-.box-title h1{
+/*Estilos generales*/
+h1{
     font-family: "punk";
     font-size: 500%;
     font-weight: lighter;
+}
+h2{
+    background-color: #000;
+    color: white;
+    padding: 2%;
+    font-family: 'cafe-bold';
+}
+h3{
+    font-family: 'cafe-bold';
 }
 p{
     font-family: 'cafe-bold';
@@ -31,7 +41,7 @@ body {
 }
  /*Abstracciones generales que estaba repitiendo*/
 section{
-    margin-top: 20%;
+    margin-top: 10%;
     text-align: center;
     border-radius: 6px;
 }
@@ -44,26 +54,20 @@ section{
     padding-bottom: 2%;
 }
 
-h2{
-    background-color: #000;
-    color: white;
-    padding: 2%;
-    font-family: 'cafe-bold';
-}
-
 /*Barra navegación*/
 .navigation-bar{
     position: fixed;  
+    top:0;
     width: 100%;
     background-color: #000;
+    color: #c4dafa;
     text-align: center;
     padding: 2%;
 }
 
 .navigation-bar li{
     display: inline;
-    padding:2%
-
+    padding:2%;
 }
 .navigation-bar li:hover{
     background-color: #178695;
@@ -74,19 +78,27 @@ h2{
     color: #f3f4f9;
     font-size: 120%;
 }
+
+/*Media query para la barra de navegación responsive*/
 @media only screen and (max-width: 600px) {
-    .navigation-bar a{
-      font-size: 75%;
+    body{
+        width: 100vh;
+    }
+    .container{
+        padding-left: 8%;
     }
   }
+
+/*Sección bienvenida a la página*/
 #home .container{
-    padding-top: 10%;
+    padding-top: 15%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .box-logo{
     text-align: center;
-    margin-left: 20%;
+    margin-left: 0%;
+    width: 90%;
 }
 
 .box-logo img{
@@ -103,7 +115,7 @@ h2{
 .box-title p{
     margin-top: 3%;
     text-align: justify;
-    width: 40%;
+    width: 60%;
 }
 
 .box-title label{
@@ -114,7 +126,7 @@ h2{
     margin-top: 3%;
     margin-bottom: 1%;
     padding: 1%;
-    width: 80%;
+    width: 60%;
     border-radius: 3px;
     border-style: solid;
     border-color: #005187;
@@ -138,8 +150,6 @@ h2{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     column-gap: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 .box-libros img{
     width: 50%;
@@ -150,31 +160,25 @@ h2{
 
 .box-libros p{
     margin-top: 10%;
+    width: 80%;
+    margin-left: 2.5%;
     text-align: justify;
 }
 
 /* Eventos*/
-#eventos{
-    background-color: #f3f4f9;
-    text-align: center;
-    border-radius: 6px;
-}
-
 #eventos .container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding-bottom: 30%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .box-evento  table{
     border-spacing: 0;
     text-align: center;
-    width: 96%;
+    width: 80%;
     border-color: #178695;
     border-radius: 3px;
-    margin: 2%;
-    height: 130%;
-
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 .box-evento table th{
     background-color: #000;
@@ -184,15 +188,19 @@ h2{
 
 .box-evento table td{
     font-family: 'cafe-bold';
+    padding: 2%;
 }
 
 .topleft{
     width: 30%;
     border-top-left-radius: 3px;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
 }
 
 .topright{
     border-top-right-radius: 3px;
+    
 }
 
 .bottomleft{
@@ -201,31 +209,43 @@ h2{
 
 .bottomright{
     border-bottom-right-radius: 3px;
+    text-align: justify;
 }
 
 /*Géneros*/
 #generos .container{
     padding-top: 0%;
     padding-bottom: 0%;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     text-align: center;
 }
+
+/*Media query para que las cajas de géneros se alineen en vertical responsive*/
+@media only screen and (max-width: 600px) {
+  #generos .container{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-left: 0%;
+  }
+  .box{
+    width: 100vh;
+  }
+  }
+
 #generos a{
     text-decoration: none;
     font-family: 'cafe-bold';
-}
-.box-novela{
-    background-color: #DDF0FF;
 }
 .box a{
     color:#000;
     font-size: 150%;
 }
 .box{
-    padding-top: 80%;
-    padding-bottom: 80%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+.box-novela{
+    background-color: #DDF0FF;
 }
 .box:hover{
     background-color: #f3f4f9;
@@ -251,12 +271,8 @@ h2{
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 10%;
-    column-gap: 4em;
     line-height: 1.5;
 
-}
-.box-autor-descripcion h3{
-    font-family: 'cafe-bold';
 }
 
 .box-autor-descripcion a{
@@ -283,6 +299,7 @@ h2{
 
 .box-informacion li{
     line-height: 2;
+    list-style: none;
 }
 .box-informacion a{
     text-decoration: none;
@@ -291,18 +308,15 @@ h2{
 .box-informacion a:hover{
     text-decoration: underline;
 }
-.iconos{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 20%;
-    margin-top: 2%;
-    margin-left: 40%;
-}
-.box-rrss a img {
+
+#contacto .container a img {
     height: 3em;
     border-radius: 6px;
 }
-.box-mapa a img{
+#contacto .container a{
+    text-decoration: none;
+}
+#contacto .container .box-mapa a img{
     height: 20%;
     width:20%;
 }
