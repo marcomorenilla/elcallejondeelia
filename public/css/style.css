@@ -1,8 +1,340 @@
-div{
-    border-color: red;
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'cafe-bold';
+    src: url(../resources/font/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+@font-face{
+    font-family: 'punk';
+    src: url(../resources/font/Punk\ Typewriter.otf);
+}
+/*Estilos generales*/
+h1{
+    font-family: "punk";
+    font-size: 500%;
+    font-weight: lighter;
+}
+h2{
+    background-color: #000;
+    color: white;
+    padding: 2%;
+    font-family: 'cafe-bold';
+}
+h3{
+    font-family: 'cafe-bold';
+}
+p{
+    font-family: 'cafe-bold';
+}
+
+/*Efecto parallax*/
+body { 
+    background-image: url(../resources/img/cafe-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ /*Abstracciones generales que estaba repitiendo*/
+section{
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 6px;
+}
+.container{
+    padding-top: 2%;
+    background-color: #f3f4f9;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+/*Barra navegación*/
+.navigation-bar{
+    position: fixed;  
+    top:0;
+    width: 100%;
+    background-color: #000;
+    color: #c4dafa;
+    text-align: center;
+    padding: 2%;
+}
+
+.navigation-bar li{
+    display: inline;
+    padding:2%;
+}
+.navigation-bar li:hover{
+    background-color: #178695;
+}
+.navigation-bar a{
+    text-decoration: none;
+    font-family: 'cafe-bold';
+    color: #f3f4f9;
+    font-size: 120%;
+}
+
+/*Media query para el desbordamiento responsive*/
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100vh;
+    }
+    .container{
+        padding-left: 8%;
+    }
+  }
+
+/*Sección bienvenida a la página*/
+#home .container{
+    padding-top: 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.box-logo{
+    text-align: center;
+    margin-left: 0%;
+    width: 90%;
+}
+
+.box-logo img{
+    width: 60%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.box-title{
+    padding-left: 2%;
+    text-align: left;
+}
+
+.box-title p{
+    margin-top: 3%;
+    text-align: justify;
+    width: 60%;
+}
+
+.box-title label{
+    font-family: 'cafe-bold';
+}
+
+.box-title input{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+    width: 60%;
+    border-radius: 3px;
     border-style: solid;
+    border-color: #005187;
 }
-.separador{
-    padding-bottom: 5%;
-    border-style: none;
+
+.box-title button{
+    border-radius: 3px;
+    font-family: 'cafe-bold';
+    width: 15%;
+    padding: 1%;
+    color: #f3f4f9;
+    background-color: #84b6f4;
 }
+.box-title button:hover{
+    background-color: #005187;
+    text-decoration: underline;
+}
+
+/*Libros más vendidos*/
+#topseller .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: min-content;
+    column-gap: 2%; 
+}
+.box-libros{
+    height: fit-content;
+    padding: 5%;
+}
+
+.box-libros img{
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.box-libros p{
+    margin-top: 0%;
+    text-align: justify;
+}
+
+/* Eventos*/
+#eventos .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.box-evento  table{
+    border-spacing: 0;
+    text-align: center;
+    width: 80%;
+    border-color: #178695;
+    border-radius: 3px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.box-evento table th{
+    background-color: #000;
+    color: #f3f4f9;
+    font-family: 'cafe-bold';
+}
+
+.box-evento table td{
+    font-family: 'cafe-bold';
+    padding: 2%;
+}
+
+.topleft{
+    width: 30%;
+    border-top-left-radius: 3px;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+}
+
+.topright{
+    border-top-right-radius: 3px;
+    
+}
+
+.bottomleft{
+    border-bottom-left-radius: 3px;
+}
+
+.bottomright{
+    border-bottom-right-radius: 3px;
+    text-align: justify;
+}
+
+/*Géneros*/
+#generos .container{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+
+/*Media query para que las cajas de géneros se alineen en vertical responsive*/
+@media only screen and (max-width: 600px) {
+  #generos .container{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-left: 0%;
+  }
+  .box{
+    width: 100vh;
+  }
+  }
+
+#generos a{
+    text-decoration: none;
+    font-family: 'cafe-bold';
+}
+.box a{
+    color:#000;
+    font-size: 150%;
+}
+.box{
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+.box-novela{
+    background-color: #DDF0FF;
+}
+.box:hover{
+    background-color: #f3f4f9;
+}
+.box-fantasia{
+    background-color: #c4dafa;
+}
+.box-ciencia-ficcion{
+    background-color: #84b6f4;
+}
+.box-historica{
+    background-color: #4d82bc;
+}
+.box-informatica{
+    background-color: #005187;
+}
+
+/*Autores*/
+
+.box-autor-descripcion p{
+    text-align: justify;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    line-height: 1.5;
+
+}
+
+.box-autor-descripcion a{
+    font-family: 'cafe-bold';
+    text-decoration: none;
+    color: #178695;
+}
+
+.box-autor-descripcion a:hover{
+    text-decoration: underline;
+}
+
+.box-autor img{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+/*Sección contacto*/
+
+.box-informacion{
+    font-family: 'cafe-bold';
+    margin-top: 2%;
+}
+
+.box-informacion li{
+    line-height: 2;
+    list-style: none;
+}
+.box-informacion a{
+    text-decoration: none;
+    color: #178695;
+}
+.box-informacion a:hover{
+    text-decoration: underline;
+}
+
+#contacto .container a img {
+    height: 3em;
+    border-radius: 6px;
+}
+#contacto .container a{
+    text-decoration: none;
+}
+#contacto .container .box-mapa a img{
+    height: 20%;
+    width:20%;
+}
+
+/*Footer*/
+footer{
+    padding: 1%;
+    text-align: center;
+    background-color: #000;
+}
+footer a{
+    color: #f3f4f9;
+    font-family: 'cafe-bold';
+}
+
+
+

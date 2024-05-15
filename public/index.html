@@ -4,81 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="resources/img/gato-negro.png">
     <title>elcallejondeelia</title>
 </head>
 <body>
-    <div id="encabezado">
-        <h2>Encabezado</h2>
-        <nav>
-            <ul class="menu">
-                <li><a href="#topseller">Libros más venidos</a></li>
+    <!--Abro sección principal de cabecera-->
+    <header id="home">
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#topseller">Libros más vendidos</a></li>
                 <li><a href="#eventos">Eventos</a></li>
                 <li><a href="#generos">Géneros</a></li>
                 <li><a href="#autores">Autores</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-        <img src="resources/img/provisional.png" alt="Logo tienda">
-        <h1>El callejón de Elia</h1>
-        <div class="buscador">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi neque iste incidunt iure corporis maiores, est praesentium amet adipisci sapiente voluptatum veniam nihil? Blanditiis iste cupiditate eum dolor ullam.</p>
+        <div class="container">
+                <div class="box-logo">
+                    <img src="resources/img/pexels-emily-252615-768125.jpg" alt="logo">
+                </div>
+                <div class="box-title">
+                    <h1>El Callejón de Elia</h1>
+                    <p>Librería y punto de encuentro para todas aquellas personas que nos gusta el encanto de perderse en una nueva historia a través de las páginas de papel que componen los libros. <br><br> Ven a conocernos, seguro que no te arrepientes, te esperamos.</p><br><br>
+                    <form>
+                        <label>Buscar: </label>
+                        <br>
+                        <input type="search" placeholder="Introduce el título o autor del libro...">
+                        <br>
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div> 
+
         </div>
-    </div>
-    <div class="separador"></div>
-    <div id="topseller">
+    </header>
+    <!--Cierro cabecera-->
+
+    <!--Abro sección libros más vendidos-->
+    <section id="topseller">
         <h2>Libros más vendidos</h2>
-        <img src="resources/img/provisional.png" alt="Imagen Libro">
-        <img src="resources/img/provisional.png" alt="Imagen Libro">
-        <img src="resources/img/provisional.png" alt="Imagen Libro">
-        <img src="resources/img/provisional.png" alt="Imagen Libro">
-        <img src="resources/img/provisional.png" alt="Imagen Libro">
-    </div>
-    <div class="separador"></div>
-    <div id="eventos">
+        <div class="container">
+            <div class="box-libros">
+                <img class="img" src="resources/img/pexels-karolina-grabowska-4218586.jpg" alt="libro">
+                <h3>Harry Potter y la piedra filosofal</h3><br>
+                <h3>J.K Rowling</h3><br>
+                <p>"Con las manos temblorosas, Harry le dio la vuelta al sobre y vio un  sello de lacre púrpura con un escudo de armas: un león, un águila, un tejón y una serpiente, que rodeaban una gran letra H."<br><br> Harry Potter nunca ha oído hablar de Hogwarts hasta que empiezan a caer  cartas en el felpudo del número 4 de Privet Drive.<br><br> Llevan la dirección  escrita con tinta verde en un sobre de pergamino amarillento con un  sello de lacre púrpura, y sus horripilantes tíos se apresuran a  confiscarlas. Más tarde, el día que Harry cumple once años, Rubeus  Hagrid, un hombre gigantesco cuyos ojos brillan como escarabajos negros,  irrumpe con una noticia extraordinaria: Harry Potter es un mago, y le  han concedido una plaza en el Colegio Hogwarts de Magia y Hechicería.<br><br>¡Está a punto de comenzar una aventura increíble!</p>
+            </div>
+            <div class="box-libros">
+                <img class="img" src="resources/img/pexels-karolina-grabowska-4218586.jpg" alt="libro">
+                <h3>Memorias de Idhún I: La Resistencia</h3><br>
+                <h3>Laura Gallego García</h3><br>
+                <p>El día en que se produjo en Idhún la conjunción astral de los tres soles y las tres lunas, Ashran el Nigromante se hizo con el poder en aquel planeta. En nuestro mundo, un guerrero y un mago exiliados de Idhún han formado la Resistencia, a la que pertenecen también Jack y Victoria, dos adolescentes nacidos en la Tierra. <br><br> El objetivo del grupo es acabar con el reinado de las serpientes aladas, pero Kirtash, un joven y despiadado asesino, enviado por Ashran a la Tierra, no se lo va a permitir.</p>
+            </div>
+            <div class="box-libros">
+                <img class="img" src="resources/img/pexels-karolina-grabowska-4218586.jpg" alt="libro">
+                <h3>Trilogía de Maddaddam: Oryx y Crake</h3><br>
+                <h3>Margaret Atwood</h3><br>
+                <p>Una conmovedora historia sobre el último habitante del planeta en un inquietante mundo postapocalíptico. Primera parte de la llamada Trilogía de MaddAddam.<br><br>Oryx y Crake es una inolvidable historia de amor y una conmovedora imagen de un cercano e inquietante horizonte postapocalíptico.<br><br>Conocido como Jimmy antes de que el planeta se viese asolado por una serie de desastres naturales, Hombre de las Nieves llora la pérdida de Crake, su mejor amigo, y de la bella y esquiva Oryx, de quien ambos estaban enamorados, mientras lucha por sobrevivir en absoluta soledad sobre la faz de la Tierra.<br><br> A merced de los elementos, acechado por los recuerdos y sin más compañía que la de los Hijos de Crake, esos seres de ojos verdes que lo consideran una especie de profeta, Hombre de las Nieves se pregunta cómo ha podido cambiar todo en tan poco tiempo y emprende un doble viaje hacia su pasado y hacia la burbuja de alta tecnología creada por Crake, el lugar donde empezó todo.</p>
+            </div>
+            <div class="box-libros">
+                <img class="img" src="resources/img/pexels-karolina-grabowska-4218586.jpg" alt="libro">
+                <h3>Un amor</h3><br>
+                <h3>Sara Mesa</h3><br>
+                <p>Ambiciosa, sólida, arriesgada: vuelve Sara Mesa con una novela en la que las pulsiones más insospechadas de sus protagonistas van emergiendo mientras la comunidad construye su chivo expiatorio.<br><br>La historia de Un amor ocurre en La Escapa, un pequeño núcleo rural donde Nat, una joven e ​inexperta traductora, acaba de mudarse. Su casero, que le regala un perro como gesto de bienvenida, no tardará en mostrar su verdadera cara, y los conflictos en torno a la casa alquilada –una construcción pobre, llena de grietas y goteras– se convertirán en una verdadera obsesión para ella. El resto de los habitantes de la zona –la chica de la tienda, Píter el hippie, la vieja y demente Roberta, Andreas el alemán, la familia de ciudad que pasa allí los fines de semana– acogerán a Nat con aparente normalidad, mientras de fondo laten la incomprensión y la extrañeza mutuas.<br><br>La Escapa, con el monte de El Glauco siempre presente, terminará adquiriendo una personalidad propia, oprimente y confusa, que enfrentará a Nat no solo con sus vecinos, sino también consigo misma y sus propios fracasos. Llena de silencios y equívocos, de prejuicios y sobrentendidos, de tabús y transgresiones, Un amor aborda, de manera implícita pero constante, el asunto del lenguaje no como forma de comunicación sino de exclusión y diferencia.<br><br>Sara Mesa vuelve a confrontar al lector con los límites de su propia moral en una obra ambiciosa, arriesgada y sólida en la que, como si de una tragedia griega se tratara, las pulsiones más insospechadas de sus protagonistas van emergiendo poco a poco mientras, de forma paralela, la comunidad construye su chivo expiatorio.</p>
+            </div>
+            <div class="box-libros">
+                <img class="img" src="resources/img/pexels-karolina-grabowska-4218586.jpg" alt="libro">
+                <h3>La buena suerte</h3><br>
+                <h3>Rosa Montero</h3><br>
+                <p>"La alegría es un hábito."<br><br>¿Que impulsa a un hombre a bajarse anticipadamente de un tren y ocultarse en un pueblo de mala muerte? ¿Quiere recomenzar su vida o pretende acabar con ella? Tal vez este huyendo de alguien, o de algo, o incluso de sí mismo, y el destino le ha traído a Pozonegro, un antiguo centro hullero que ahora agoniza. Por delante de su casa pasan trenes que pueden ser salvación o condena, mientras los perseguidores estrechan el cerco. La perdición parece estar más próxima cada día.<br><br>Pero este hombre, Pablo, tambien conoce gente en aquel lugar maldito, como la luminosa, incompleta y algo chiflada Raluca, que pinta cuadros de caballos y tiene un secreto. Allí todos arrastran algún secreto, algunos más oscuros y peligrosos que otros. Y algunos simplemente ridículos. Tambien hay humor en ese pueblo triste</p>
+            </div>
+            <div class="box-libros">
+                <img class="img" src="resources/img/pexels-karolina-grabowska-4218586.jpg" alt="libro">
+                <h3>La trenza</h3><br>
+                <h3>Laetita Colombani</h3><br>
+                <p>Con cerca de medio millón de ejemplares vendidos en Francia y casi treinta traducciones en curso,La trenza fue uno de los fenómenos  editoriales de 2017. En esta narración vibrante y conmovedora, Laetitia  Colombani -guionista, directora y actriz de reconocido prestigio- aborda  las historias de tres mujeres que, nacidas en continentes muy dispares,  comparten unas ideas y sentimientos que las unen en un poderoso anhelo de libertad.<br><br>INDIA. En Badlapur, la intocable Smita sobrevive recogiendo los  excrementos de una casta superior. Resignada a su condición, está  decidida en cambio a que su hija no siga sus pasos: la pequeña irá a la  escuela y su vida será digna y provechosa, aunque para ello Smita tenga que desafiar las normas establecidas.<br><br>ITALIA.A Giulia le encanta trabajar en el taller familiar, el  último de Palermo que confecciona pelucas con pelo auténtico. Hubiera  podido ir a la universidad, pero dejó el instituto con dieciséis años  para iniciarse en los secretos de este oficio. Cuando su padre sufre un  accidente y Giulia descubre que el negocio está al borde de la quiebra, afronta la adversidad con valentía y determinación.<br><br>CANADÁ. Sarah es una abogada de éxito en Montreal que lo ha  sacrificado todo por su carrera: dos matrimonios fallidos y tres hijos a  los que no ha visto crecer. Un día, tras caer desmayada en el transcurso  de un juicio, Sarah comprende que su vida ha dado un vuelco y que deberá escoger lo que de verdad le importa.<br><br> Smita, Giulia y Sarah no se conocen, pero tienen en común el empuje y el  tesón de las mujeres que rechazan lo que el destino les ha reservado y  se rebelan contra las circunstancias que las oprimen. Como hilos invisibles, sus caminos se entrelazan, formando una trenza que simboliza la voluntad inquebrantable de vivir con esperanza e ilusión.</p>
+            </div>
+        </div>
+    </section>
+    <!--Cierro sección libros más vendidos-->
+
+    <!--Abro sección Eventos-->
+    <section id="eventos">
         <h2>Eventos</h2>
-        <div class="dia">25 Mar 24</div>
-        <div class="nombreevento">Nombre</div>
-        <div class="descripcionevento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus explicabo distinctio nesciunt laborum delectus nam eum aliquam amet reprehenderit vero quos eius rerum obcaecati eos ad, ipsum at libero!</div>
-    </div>
-    <div class="separador"></div>
-    <div id="generos">
+        <div class="container">
+            <div class="box-evento">
+                <table border="1">
+                    <tr>
+                        <th class="topleft">Día</th>
+                        <th class="topright">Descripción</th> 
+                    </tr>
+                    <tr>
+                        <td class="bottomleft" rowspan="2">27/05/2024 <br>10:15</td>
+                        <td>Club de lectura</td>
+                    </tr>
+                    <tr>
+                        <td class="bottomright">Este mes contamos con la presencia de toda una experta literiaria ya que ella misma ha escrito más de la mitad que vendemos. <br><br> Acércate y disfruta de su último éxito en un círculo de lectores en el que hemos cuidado cada detalle.<br><br> Además gracias a nuestros compañeros de la cafetería de especialidad RoastCoffery And Talks disfruta del mejor café al final del evento. <br><br> No se te olvide escribirnos por cualquier red social para reservar tu plaza.<br><br>Siéntete como en casa. </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="box-evento">
+                <table border="1">
+                    <tr>
+                        <th class="topleft">Día</th>
+                        <th class="topright">Descripción</th> 
+                    </tr>
+                    <tr>
+                        <td class="bottomleft" rowspan="2">28/05/2024 <br>18:30</td>
+                        <td>Exposición fotográfica</td>
+                    </tr>
+                    <tr>
+                        <td class="bottomright">Tenemos el placer de presentaros la obra de una de las fotógrafas más influyentes del momento. <br><br>Disfruta de sus mejores fotografías en nuestra tienda mientras disfrutas de una consumición incluída con la entrada y te deléitas con el catering que nos van a preparar nuestros amigos de RoastCoffery And Talks <br><br>No se te olvide escribirnos por cualquier red social para reservar tu plaza.<br><br>Siéntete como en casa.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--Cierro sección Eventos-->
+
+    <!--Abro sección géneros-->
+    <section id="generos" >
         <h2>Géneros</h2>
-        <img src="resources/img/provisional.png" alt="Imagen Géneros">
-        <img src="resources/img/provisional.png" alt="Imagen Géneros">
-        <img src="resources/img/provisional.png" alt="Imagen Géneros">
-        <img src="resources/img/provisional.png" alt="Imagen Géneros">
-        <img src="resources/img/provisional.png" alt="Imagen Géneros">
-    </div>
-    <div class="separador"></div>
-    <div id="autores">
+        <div class="container">
+            <div class="box-novela box">
+                <a href="white.html" target="_blank">Novela</a>
+            </div>
+            <div class="box-fantasia box">
+                <a href="white.html" target="_blank">Fantasía</a>
+            </div>
+            <div class="box-ciencia-ficcion box">
+                <a href="white.html" target="_blank">Ciencia ficción</a>
+            </div>
+            <div class="box-historica box">
+                <a href="white.html" target="_blank">Histórica</a>
+            </div>
+            <div class="box-informatica box">
+                <a href="white.html" target="_blank">Informática</a>
+            </div>
+        </div>
+    </section>
+    <!--Cierro sección géneros-->
+
+    <!--Abro sección autores-->
+    <section id="autores">
         <h2>Autores</h2>
-        <div class="foto">
-            <img src="resources/img/provisional.png" alt="Imagen Autores">
+        <div class="container">
+            <div class="box-autor">
+                <img class="img" src="resources/img/pexels-minan1398-1425146.jpg" alt="">
+            </div>
+            <div class="box-autor-descripcion">
+                <h3>J.K Rowling</h3>
+                <p>Joanne Rowling (Yate, 31 de julio de 1965), quien escribe bajo los seudónimos de J. K. Rowling​ y Robert Galbraith, es una escritora, productora de cine y guionista británica, conocida por ser la autora de la serie de libros Harry Potter, que han superado los quinientos millones de ejemplares vendidos.<br><br> Este éxito literario supuso que la Sunday Times Rich List de 2008 estimase la fortuna de Rowling en 560 millones de libras, lo que la situó como la duodécima mujer más rica en el Reino Unido.<br><br>​ Asimismo, Forbes ubicó a Rowling en el cuadragésimo puesto en su lista de las celebridades más poderosas de 2007 y la revista Time la seleccionó como «personaje del año» ese mismo año, resaltando la inspiración social, moral y política que les ha dado a los personajes de Harry Potter.<br><br>Aunque escribe bajo el seudónimo J. K. Rowling,​ su nombre real es Joanne Rowling.<br><br> Antes de publicar su primera novela, la editorial Bloomsbury temió que los lectores más jóvenes tuvieran reticencia a comprar libros escritos por una mujer y le pidieron que utilizase dos iniciales y no su nombre de pila.<br><br>Como no tiene segundo nombre, eligió la letra K como su segunda inicial en honor a su abuela paterna Kathleen.<br><br>El nombre Kathleen nunca ha sido parte de su verdadero nombre.<br><br>​ Después de su matrimonio, a menudo utiliza el nombre Joanne Murray cuando lleva a cabo asuntos privados.<br><br>Se llama a sí misma Jo: «Nadie me llamaba Joanne cuando era niña, a menos que estuviesen enfadados conmigo».</p>
+                <a href=https://es.wikipedia.org/wiki/J._K._Rowling target="_blank">Más información</a>
+            </div>
+
         </div>
-        <div class="Nombre">Nombre del autor: Nombre</div>
-        <div class="authinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aspernatur dolorum, sed qui magnam nam repudiandae dolor exercitationem molestias voluptatum reprehenderit quos ad veniam ut! Dicta cum unde blanditiis magni.</div>
-    </div>
-    <div class="separador"></div>
-    <div id="contacto">
+    </section>
+    <!--Cierro sección autores-->
+
+    <!--Abro sección contacto-->
+    <section id="contacto">
         <h2>Contacto</h2>
-        <ul>
-            <li>elcallejondeelia</li>
-            <li>dirección</li>
-            <li>teléfono 666555444</li>
-            <li>email</li>
-        </ul>
-        <div class="rrss">
-            <h2>Redes sociales</h2>
-            <div class="whatsapp">
-                <img src="resources/img/provisional.png" alt="whatsapp">
+        <div class="container">
+            <div class="box-mapa">
+                <a href="https://www.google.es/maps/" target="_blank">
+                    <img class="img-mapa" src="resources/img/foto-ubicacion.png" alt="mapa tienda">
+                </a>
             </div>
-            <div class="facebook">
-                <img src="resources/img/provisional.png" alt="facebook">
-            </div>
-            <div class="instagram">
-                <img src="resources/img/provisional.png" alt="instagram">
-            </div>
+            <div class="box-informacion">
+                <ul>
+                    <li>El Callejón de Elia</li>
+                    <li>Calle falsa 123</li>
+                    <li><a href="tel:666555444">666555444</a></li>
+                    <li><a href="mailto:elcallejon@gmail.com">elcallejon@gmail.com</a></li>
+                </ul>
+            </div>  
+            <a  href="https://github.com/marcomorenilla" target="_blank">
+                <img src="resources/img/icons/github.svg" alt="github">
+            </a>
+            <a  href="https://wa.me/666555444" target="_blank">
+                <img src="resources/img/icons/whatsapp.svg" alt="whatsapp">
+            </a>
+            <a  href="https://www.instagram.com/" target="_blank">
+                <img src="resources/img/icons/instagram.svg" alt="instagram">
+            </a>
+            <a  href="https://www.facebook.com/" target="_blank">
+                <img src="resources/img/icons/facebook.svg" alt="facebook">
+            </a>
         </div>
-    </div>
+    </section>
+    <!--Cierro sección contacto-->
+
+    <!--Abro footer-->
+    <footer>
+        <a href="white.html" target="_blank">Avisos legales</a>
+    </footer>
+    <!--Cierro footer-->
 </body>
 </html>
