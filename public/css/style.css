@@ -79,7 +79,7 @@ section{
     font-size: 120%;
 }
 
-/*Media query para la barra de navegación responsive*/
+/*Media query para el desbordamiento responsive*/
 @media only screen and (max-width: 600px) {
     body{
         width: 100vh;
@@ -149,19 +149,23 @@ section{
 #topseller .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    column-gap: 2%;
+    grid-template-rows: min-content;
+    column-gap: 2%; 
 }
+.box-libros{
+    height: fit-content;
+    padding: 5%;
+}
+
 .box-libros img{
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
     border-radius: 6px;
 }
 
 .box-libros p{
-    margin-top: 10%;
-    width: 80%;
-    margin-left: 2.5%;
+    margin-top: 0%;
     text-align: justify;
 }
 
