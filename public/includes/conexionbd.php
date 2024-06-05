@@ -1,4 +1,5 @@
 <?php
+// conexión a la BBDD 
 $host = "localhost"; 
 $username = "localmod"; 
 $password = "callejondigon"; 
