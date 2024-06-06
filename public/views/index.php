@@ -104,7 +104,7 @@
 
     <!--Abro footer-->
     <footer>
-        <a href="../white.html" target="_blank">Avisos legales</a>
+        <a href="../legal.html" target="_blank">Protección de datos</a>
     </footer>
     <!--Cierro footer-->
 </body>
