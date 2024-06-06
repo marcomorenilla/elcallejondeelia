@@ -149,7 +149,6 @@ section{
 #topseller .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: min-content;
     column-gap: 2%; 
 }
 .box-libros{
