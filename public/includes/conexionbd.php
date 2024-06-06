@@ -1,7 +1,7 @@
 <?php
 // conexión a la BBDD 
 $host = "localhost"; 
-$username = "localmod"; 
+$username = "callejon"; 
 $password = "callejondigon"; 
 $dbname = "elcallejondeelia"; 
 
