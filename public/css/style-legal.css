@@ -1,0 +1,16 @@
+.blue{
+    color: blue;
+}
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f3f4f9;
+    text-align: justify;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+body li{
+    margin-bottom: 1%;
+}
