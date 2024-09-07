@@ -1,10 +1,17 @@
-# elcallejondeelia
+# El Callejón de Elia
 ---
-Proyecto web Lenguaje de Marcas.
+**Descripción:** Se trata del proyecto optativo de la asignatura Lenguaje de Marcas, consiste en la realización de una one page web.
 
-- Este proyecto es entregado como proyecto de la asignatura mientras se estudia primero de  **DAM**.
+El objetivo del proyecto es familiarizarse y aprender la utilización del lenguaje de marcado **HTML** enriquecido con hoja de estilos **CSS**.
 
-***
-Se puede consultar en el repositorio proyecto intermodular en la parte de Lenguaje de marcas también.
+Además, se junta con la parte del proyecto de **BBDD** utilizando **PHP** para cargar el contenido de forma dinámica.
+
+---
+## Enlace a página HTML
+
+[elcallejondeelia](https://elcallejondeelia.vercel.app/)
+
+---
+Se incluye también dentro del repositorio proyecto intermodular ya que la parte php forma parte de éste.
 
 [proyectointermodular](https://github.com/marcomorenilla/proyectoIntermodular/tree/main/Lenguaje-de-marcas)
